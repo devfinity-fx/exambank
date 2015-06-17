@@ -1,0 +1,15 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+/vendor
+/node_modules
+=======
+/bootstrap/compiled.php
+.env.*.php
+.env.php
+>>>>>>> bc2adbd8317e5ddc17323106bca01d52d1b85bac
+=======
+/bootstrap/compiled.php
+.env.*.php
+.env.php
+>>>>>>> bc2adbd8317e5ddc17323106bca01d52d1b85bac
+.env
