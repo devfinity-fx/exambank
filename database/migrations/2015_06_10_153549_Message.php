@@ -17,7 +17,7 @@ class Message extends Migration {
 			//
             $table->increments('MessageID');
             $table->string('MemoID')->nullable(); //poidi meron poidi wala. etong memo na to e pang system mail
-            $table->string('Sender'); // email address itu
+            $table->string('SenderID'); // id
             $table->string('Subject');
             $table->text('Description');
             $table->char('MessageType', 1)->default('R');

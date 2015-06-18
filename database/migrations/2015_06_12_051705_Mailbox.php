@@ -19,7 +19,7 @@ class Mailbox extends Migration {
             $table->integer('MessageID')->unsigned();
             $table->boolean('Read')->default(false);
             $table->boolean('Starred')->default(false);
-            $table->char('Flag', 1);
+            $table->char('Flag', 1)->default('N');
             $table->string('Label', 20);
             $table->char('Status', 1)->default('N');
 			$table->timestamps();
