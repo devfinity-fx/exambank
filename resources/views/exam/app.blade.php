@@ -67,8 +67,8 @@ desired effect
             </h1>
             <ol class="breadcrumb">
                 <li><a href="./"><i class="fa fa-dashboard"></i> Main</a></li>
-                <li><a href="/mail/">Mail</a></li>
-                @if($params['View']!='Messages')
+                <li><a href="/exam/">Exam</a></li>
+                @if($params['View']!='Exam')
                     <li class="active">{{ Str::title($params['View']) }}</li>
                 @endif
             </ol>
@@ -77,7 +77,7 @@ desired effect
         <!-- Main content -->
         <section class="content">
             <div class="row">
-                @include('mail.sidebar')
+                @include('exam.sidebar')
                 @yield('content')
             </div> <!-- row -->
         </section>

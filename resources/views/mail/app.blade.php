@@ -63,7 +63,7 @@ desired effect
         <section class="content-header">
             <h1>
                 {{ Str::title($params['View']) }}
-                <small>{{ $params['Description'] }}</small>
+                <small>{!! $params['Description'] !!}</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="./"><i class="fa fa-dashboard"></i> Main</a></li>

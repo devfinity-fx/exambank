@@ -31,8 +31,8 @@
                 </a>
             </li>
             <li class="treeview">
-                <a href="/exams">
-                    <i class="fa fa-newspaper-o"></i><span>Exams</span>
+                <a href="/exam">
+                    <i class="fa fa-newspaper-o"></i><span>Exam</span>
                 </a>
             </li>
             <li class="calendar">

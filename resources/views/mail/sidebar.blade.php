@@ -26,9 +26,9 @@
         </div>
         <div class="box-body no-padding">
             <ul class="nav nav-pills nav-stacked">
-                <li><a href="/mail/label/important"><i class="fa fa-circle-o text-red"></i> Important</a></li>
-                <li><a href="/mail/label/promotions"><i class="fa fa-circle-o text-yellow"></i> Promotions</a></li>
-                <li><a href="/mail/label/social"><i class="fa fa-circle-o text-light-blue"></i> Social</a></li>
+                <li><a href="/mail/label/important"><i class="fa fa-circle-o text-green"></i> Important</a></li>
+                <li><a href="/mail/label/submissions"><i class="fa fa-circle-o text-navy"></i> Pending Submissions</a></li>
+                <li><a href="/mail/label/requests"><i class="fa fa-circle-o text-maroon"></i> Clone Requests</a></li>
             </ul>
         </div><!-- /.box-body -->
     </div><!-- /.box -->

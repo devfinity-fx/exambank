@@ -19,7 +19,9 @@ class ExamController extends Controller {
 	 */
 	public function index()
 	{
-        return view('exam.index');
+        $params = array('View'=>'Exam', 'Description'=>'Manage your exams here.');
+
+        return view('exam.index', compact('params'));
 	}
 
 	/**
@@ -29,7 +31,8 @@ class ExamController extends Controller {
 	 */
 	public function create()
 	{
-		//
+        $params = array('View'=>'Create Exam', 'Description'=>'Create new exam.');
+		return view('exam.create', compact('params'));
 	}
 
 	/**

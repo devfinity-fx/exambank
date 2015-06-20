@@ -11,7 +11,7 @@
             <div class="col-md-9">
                 <div class="box box-danger">
                     <div class="box-header with-border">
-                        <h3 class="box-title">{{ Str::title($params['View']) }}</h3>
+                        <h3 class="box-title">Label: <em>{{ Str::title($params['View']) }}</em></h3>
                         <div class="box-tools pull-right">
                             <div class="has-feedback">
                                 <input type="text" class="form-control input-sm" placeholder="Search Mail"/>

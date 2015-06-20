@@ -1,22 +1,30 @@
-@extends('app')
+@extends('exam.app')
+
+@section('styles')
+    <!-- fullCalendar 2.2.5-->
+    {!! Html::style('plugins/fullcalendar/fullcalendar.min.css') !!}
+    {!! Html::style('plugins/fullcalendar/fullcalendar.print.css') !!}
+    {!! Html::style('plugins/iCheck/flat/red.css') !!}
+@stop
 
 @section('content')
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-        <h1>
-            Exams
-            <small>Manage and view your exams here.</small>
-        </h1>
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Main</a></li>
-            <li class="active">Exams</li>
-        </ol>
-    </section>
+    asdjkahs
+@stop
 
-    <!-- Main content -->
-    <section class="content">
-
-        <!-- Your Page Content Here -->
-
-    </section><!-- /.content -->
+@section('scripts')
+    <!-- fullCalendar 2.2.5-->
+    {!! Html::script('plugins/fastclick/fastclick.min.js') !!}
+    <!-- Slimscroll -->
+    {!! Html::script('plugins/slimScroll/jquery.slimscroll.min.js') !!}
+    <!-- iCheck -->
+    {!! Html::script('plugins/iCheck/icheck.min.js') !!}
+    <script>
+        $(function () {
+            $('input').iCheck({
+                checkboxClass: 'icheckbox_flat-red',
+                radioClass: 'iradio_flat-red',
+                increaseArea: '20%' // optional
+            });
+        });
+    </script>
 @stop

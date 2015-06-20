@@ -50,6 +50,20 @@ class MailController extends Controller {
         return view('mail.view', compact('params'));
     }
 
+    public function label($id)
+    {
+        $labels = array('important', 'submissions', 'requests');
+
+        if(!in_array($id, $labels))
+        {
+            abort(404);
+        }
+
+        $message = sprintf("View your messages labelled as <em>%s</em>.", $id);
+        $params = array('View'=>$id, 'Description'=>$message);
+        return view('mail.label', compact('params'));
+    }
+
 	/**
 	 * Store a newly created resource in storage.
 	 *

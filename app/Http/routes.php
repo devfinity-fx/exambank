@@ -14,8 +14,10 @@
 Route::get('/',                 'PagesController@index');
 Route::get('login',             'Auth\AuthController@loginForm');
 Route::get('logout',            'Auth\AuthController@logoutAuth');
+Route::post('login',            'Auth\AuthController@loginAuth');
 
-Route::get('exams',             'ExamController@index');
+Route::get('exam',              'ExamController@index');
+Route::get('exam/create',       'ExamController@create');
 
 Route::get('mail',              'MailController@index');
 Route::get('mail/compose',      'MailController@create');
@@ -23,5 +25,3 @@ Route::get('mail/{id}',         'MailController@view');
 
 
 Route::get('events',            'EventController@index');
-
-Route::post('login',            'Auth\AuthController@loginAuth');
